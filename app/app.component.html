@@ -1,0 +1,23 @@
+<h1>
+  {{title}}
+</h1>
+<hr>
+<form>
+    <label for="temperature">Add Temperature:</label>
+    <input name="temperature" id="temperature" [(ngModel)]="temp" >
+    <button (click)="recordTemperature(temp)">Add</button><hr>
+    <label> Memory Space status :  </label> <progress value={{memleft}} max="10"></progress> {{memleft}} / {{MAXIMIUM}}
+</form>
+  
+  <hr />
+  <section>
+    <button (click)="getCurrentMedian()">Get Median Temperature</button>
+    Current Median:  <label>{{median}}</label>
+   
+  </section>
+  <hr>
+  <hr>
+
+
+
+
